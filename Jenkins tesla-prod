@@ -31,7 +31,6 @@ node{
     sh "sleep  50"
      deploy adapters: [tomcat8(credentialsId: '38ab0236-f210-4698-9c53-b50dfd23d6a2', path: '', url: 'http://18.212.50.229:8080/')], contextPath: null, war: 'target/*war'
   }
-  }
   stage('8emailNotification'){
     emailext body: '''Hi All,
 
